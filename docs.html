@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Docs | PhraseLauncher</title>
+<meta name="description" content="PhraseLauncher の使い方・設定方法・操作説明" />
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --accent: #4fd1c5;
+  --text: #1a202c;
+  --sub: #4a5568;
+  --border: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(180deg, #ffffff, #f1f5f9);
+  color: var(--text);
+  line-height: 1.8;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+}
+
+nav .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  margin-left: 20px;
+  color: var(--sub);
+  text-decoration: none;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 120px 24px 80px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  margin-top: 64px;
+}
+
+p, li {
+  color: var(--sub);
+}
+
+.step {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin: 24px 0;
+}
+
+code {
+  background: #edf2f7;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 90%;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.back {
+  margin-top: 64px;
+  text-align: center;
+}
+.back a {
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="inner">
+    <strong>PhraseLauncher</strong>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="docs.html" style="font-weight:600;">Docs</a>
+      <a href="info.html">Info</a>
+      <a href="https://github.com/takuyash/PhraseLauncher">GitHub</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<h1>使い方 / Documentation</h1>
+<p>
+PhraseLauncher は、定型文をキーボードだけで高速入力できるシンプルなランチャーです。
+</p>
+
+<h2>クイックスタート</h2>
+
+<div class="step">
+  <h3>1. ダウンロード</h3>
+  <p>
+    GitHub Releases から最新版をダウンロードします。
+  </p>
+  <p>
+    👉 <a href="https://github.com/takuyash/PhraseLauncher/releases">Releases ページ</a>
+  </p>
+</div>
+
+<div class="step">
+  <h3>2. 起動</h3>
+  <p>
+    exe を実行すると、タスクトレイに常駐します。
+  </p>
+</div>
+
+<div class="step">
+  <h3>3. 定型文を登録</h3>
+  <p>
+    タスクトレイのアイコンを右クリックし、設定画面を開きます。
+    グループや定型文を登録してください。
+  </p>
+  <img src="assets/PhraseSetting.png">
+</div>
+
+<div class="step">
+  <h3>4. ランチャーを起動</h3>
+  <p>
+    <code>Ctrl を2回連続</code> または <code>Ctrl + Shift + O</code> でランチャーを表示できます。
+  </p>
+  <img src="assets/launcher.png">
+</div>
+
+<h2>操作方法</h2>
+<ul>
+  <li>0–9 / A–Z のキーで即入力</li>
+  <li>キーワード入力で検索</li>
+  <li>escキーで即終了</li>
+</ul>
+
+<h2>主な機能</h2>
+<ul>
+  <li>定型文の高速入力</li>
+  <li>グループ分け・並び替え</li>
+  <li>Shift + Enter による改行入力</li>
+  <li>軽量・高速動作</li>
+</ul>
+
+<h2>アプリ更新方法</h2>
+<ul>
+  <li>1. アプリを終了</li>
+  <li>2. 新しいバージョンをダウンロード</li>
+  <li>3. 既存フォルダに上書き</li>
+  <li>4. 起動</li>
+</ul>
+
+<div class="back">
+  <a href="index.html">← トップページに戻る</a>
+</div>
+
+</main>
+
+</body>
+</html>

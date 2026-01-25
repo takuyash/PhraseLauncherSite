@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PhraseLauncher｜定型文を一瞬で入力</title>
+<meta name="description" content="PhraseLauncherは、定型文をキーボードだけで超高速入力できるWindows用ランチャーです。" />
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --accent: #4fd1c5;
+  --accent2: #63b3ed;
+  --text: #1a202c;
+  --sub: #4a5568;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(180deg, #ffffff, #f1f5f9);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e2e8f0;
+  z-index: 1000;
+}
+
+nav .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  margin-left: 20px;
+  color: var(--sub);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header {
+  padding: 120px 24px 80px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: clamp(36px, 5vw, 56px);
+  margin-bottom: 16px;
+}
+
+header p {
+  font-size: 18px;
+  color: var(--sub);
+  max-width: 720px;
+  margin: 0 auto 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: white;
+}
+
+.secondary {
+  border: 1px solid #cbd5e0;
+  color: var(--text);
+}
+
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+
+footer {
+  text-align: center;
+  padding: 48px;
+  color: var(--sub);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="inner">
+    <strong>PhraseLauncher</strong>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="docs.html">Docs</a>
+      <a href="info.html">Info</a>
+      <a href="https://github.com/takuyash/PhraseLauncher">GitHub</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <h1>定型文を整理して管理、入力も一瞬で</h1>
+  <p>
+    PhraseLauncher はキーボードだけで定型文を<br>
+    整理して管理、超高速入力できる Windows 用定型文入力ツールです。
+  </p>
+  <a class="btn primary" href="https://github.com/takuyash/PhraseLauncher/releases">Download</a>
+  <a class="btn secondary" href="docs.html">使い方を見る</a>
+</header>
+
+<section>
+  <h2>Features</h2>
+  <div class="features">
+    <div class="card">
+      <h3>⌨ キー割り当て入力</h3>
+      <p>0–9 / A–Z のキーで、マウス不要の高速入力。</p>
+    </div>
+        <div class="card">
+      <h3>⌨ 移動も矢印キーで完結</h3>
+      <p>移動も矢印キーで完結する、マウス不要の高速入力。</p>
+    </div>
+    <div class="card">
+      <h3>🔍 キーワード検索</h3>
+      <p>定型文が増えても、すぐ見つかる。</p>
+    </div>
+    <div class="card">
+      <h3>📂 グループ管理</h3>
+      <p>用途ごとに整理・並び替えも簡単。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 PhraseLauncher / MIT License
+</footer>
+
+</body>
+</html>
