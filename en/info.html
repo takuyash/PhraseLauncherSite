@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Information | PhraseLauncher</title>
+<meta name="description" content="Release notes and news for PhraseLauncher" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+/* CSS identical to JP version with lang-switch added */
+:root {
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --accent: #4fd1c5;
+  --text: #1a202c;
+  --sub: #4a5568;
+  --border: #e2e8f0;
+}
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(180deg, #ffffff, #f1f5f9);
+  color: var(--text);
+  line-height: 1.7;
+}
+nav {
+  position: fixed;
+  top: 0; width: 100%;
+  background: rgba(255,255,255,.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+}
+nav .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .links { display: flex; align-items: center; }
+nav a { margin-left: 20px; color: var(--sub); text-decoration: none; }
+header { max-width: 900px; margin: 0 auto; padding: 120px 24px 32px; text-align: center; }
+main { max-width: 900px; margin: 0 auto; padding: 24px; }
+article { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; margin-bottom: 32px; }
+article h2 { margin-top: 0; }
+.date { font-size: 13px; color: var(--sub); margin-bottom: 12px; }
+article a { color: var(--accent); text-decoration: none; font-weight: 600; }
+footer { text-align: center; padding: 48px; color: var(--sub); border-top: 1px solid var(--border); margin-top: 64px; }
+.lang-switch { font-size: 12px; border: 1px solid var(--border); padding: 2px 8px; border-radius: 4px; margin-left: 20px; display: flex; gap: 5px; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="inner">
+    <strong>PhraseLauncher</strong>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="docs.html">Docs</a>
+      <a href="info.html" style="font-weight:600;">Info</a>
+      <a href="https://github.com/takuyash/PhraseLauncher">GitHub</a>
+      <div class="lang-switch">
+        <a href="../info.html" style="margin:0; color:var(--sub); text-decoration:none;">JP</a>
+        <span style="color:var(--border);">|</span>
+        <span style="font-weight:bold; color:var(--text);">EN</span>
+      </div>
+    </div>
+  </div>
+</nav>
+<header>
+  <h1>Information</h1>
+  <p>Release notes and updates for PhraseLauncher</p>
+</header>
+<main id="info-list"></main>
+
+<script src="js/info-data-en.js"></script>
+<script src="../js/info.js"></script>
+
+<footer>
+  © 2026 PhraseLauncher / MIT License
+</footer>
+</body>
+</html>

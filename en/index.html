@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PhraseLauncher｜定型文を一瞬で入力</title>
-<meta name="description" content="PhraseLauncherは、定型文をキーボードだけで超高速入力できるWindows用ランチャーです。" />
-<meta name="google-site-verification" content="6MzU6DwWMe32M2dwroUc0SqgzRNWgJK4W-nS0xxTS2c" />
-<!-- Google tag (gtag.js) -->
+<title>PhraseLauncher | Paste Phrases Instantly</title>
+<meta name="description" content="PhraseLauncher is a Windows utility that lets you manage and paste fixed phrases instantly using only your keyboard." />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WT7WK1TFXZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -50,6 +48,12 @@ nav .inner {
   padding: 12px 24px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+nav .links {
+  display: flex;
+  align-items: center;
 }
 
 nav a {
@@ -137,52 +141,52 @@ footer {
 <nav>
   <div class="inner">
     <strong>PhraseLauncher</strong>
-    <div>
+    <div class="links">
       <a href="index.html">Home</a>
       <a href="docs.html">Docs</a>
       <a href="info.html">Info</a>
       <a href="https://github.com/takuyash/PhraseLauncher">GitHub</a>
       <div class="lang-switch">
-        <span style="font-weight:bold; color:var(--text);">JP</span>
-        <span style="color:#e2e8f0;">|</span>
-        <a href="en/index.html" style="margin:0; color:var(--sub); text-decoration:none;">EN</a>
+        <a href="../index.html" style="margin:0; color:var(--sub);">JP</a>
+        <span style="color:#cbd5e0;">|</span>
+        <span style="font-weight:bold; color:var(--text);">EN</span>
       </div>
     </div>
   </div>
 </nav>
 
 <header>
-  <h1>定型文を整理して管理、入力も一瞬で</h1>
+  <h1>Organize phrases, paste in a flash</h1>
   <p>
-    PhraseLauncher はキーボードだけで定型文を<br>
-    整理して管理、超高速入力できる Windows 用定型文入力ツールです。
+    PhraseLauncher is a Windows productivity tool designed to<br>
+    manage snippets and input them at lightning speed using only your keyboard.
   </p>
   <a class="btn primary" href="https://github.com/takuyash/PhraseLauncher/releases">Download</a>
-  <a class="btn secondary" href="docs.html">使い方を見る</a>
+  <a class="btn secondary" href="docs.html">How to Use</a>
 </header>
 
 <section>
   <h2>Features</h2>
   <div class="features">
     <div class="card">
-      <h3>⌨ キー割り当て入力</h3>
-      <p>0–9 / A–Z のキーで、マウス不要の高速入力。</p>
-    </div>
-        <div class="card">
-      <h3>⌨ 移動も矢印キーで完結</h3>
-      <p>移動も矢印キーで完結する、マウス不要の高速入力。</p>
+      <h3>⌨ Key Assignments</h3>
+      <p>Use 0–9 / A–Z keys for rapid input without touching your mouse.</p>
     </div>
     <div class="card">
-      <h3>🔍 キーワード検索</h3>
-      <p>定型文が増えても、すぐ見つかる。</p>
+      <h3>⌨ Arrow Key Navigation</h3>
+      <p>Seamlessly navigate through your phrases using only arrow keys.</p>
     </div>
     <div class="card">
-      <h3>📂 グループ管理</h3>
-      <p>用途ごとに整理・並び替えも簡単。</p>
+      <h3>🔍 Keyword Search</h3>
+      <p>Find the right phrase instantly, even as your library grows.</p>
     </div>
     <div class="card">
-      <h3>🔧 複数言語対応</h3>
-      <p>日本語と英語に対応しています。</p>
+      <h3>📂 Group Management</h3>
+      <p>Organize and reorder snippets into groups for different tasks.</p>
+    </div>
+    <div class="card">
+      <h3>🌐 Multilingual</h3>
+      <p>Full support for both English and Japanese interfaces.</p>
     </div>
   </div>
 </section>

@@ -95,6 +95,16 @@ footer {
   border-top: 1px solid var(--border);
   margin-top: 64px;
 }
+
+.lang-switch {
+  font-size: 12px;
+  border: 1px solid #cbd5e0;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 20px;
+  display: flex;
+  gap: 5px;
+}
 </style>
 </head>
 
@@ -108,6 +118,11 @@ footer {
       <a href="docs.html">Docs</a>
       <a href="info.html" style="font-weight:600;">Info</a>
       <a href="https://github.com/takuyash/PhraseLauncher">GitHub</a>
+      <div class="lang-switch">
+        <span style="font-weight:bold; color:var(--text);">JP</span>
+        <span style="color:#e2e8f0;">|</span>
+        <a href="en/info.html" style="margin:0; color:var(--sub); text-decoration:none;">EN</a>
+      </div>
     </div>
   </div>
 </nav>
