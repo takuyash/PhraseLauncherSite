@@ -1,5 +1,14 @@
 var infos = [
   {
+    date: "2026-02-11",
+    title: "v0.7.0 をリリースしました",
+    body: "・軽微な修正",
+    link: {
+      url: "https://github.com/takuyash/SimpleFolderLauncher/releases",
+      label: "GitHub Releases を見る"
+    }
+  },
+  {
     date: "2026-02-10",
     title: "v0.6.0 をリリースしました",
     body: "・定型文の移動を複数行選択してできるように修正<br>・検索機能でメモを含めて検索するかどうか選べる機能を追加<br>・定型文の暗号化機能の追加<br>・定型文の暗号化機能のオンオフを設定できるように修正<br>・定型文のインポート、エクスポート機能を追加",
