@@ -1,5 +1,14 @@
 var infos = [
   {
+    date: "2026-02-22",
+    title: "v0.8.0 Released",
+    body: "・Fixed so that group order can be changed in a popup window.<br>・Fixed an issue where “Include memo” was not localized for multiple languages.<br>・Fixed so the launcher window cannot be opened while other windows are open.<br>・Fixed so the launcher window closes when the cursor moves to another application while it is open.",
+    link: {
+      url: "https://github.com/takuyash/SimpleFolderLauncher/releases",
+      label: "View GitHub Releases"
+    }
+  },
+  {
     date: "2026-02-11",
     title: "v0.7.0 Released",
     body: "・Minor fixes.",
