@@ -2,7 +2,7 @@ var infos = [
   {
     date: "2026-08-23",
     title: "v1.0.0 Released",
-    body: "・Changed so that tags are color-coded.<br>Prevented duplicate launches of the app.",
+    body: "・Changed so that tags are color-coded.<br>・Prevented duplicate launches of the app.",
     link: {
       url: "https://github.com/takuyash/SimpleFolderLauncher/releases",
       label: "View GitHub Releases"
