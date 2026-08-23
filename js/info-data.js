@@ -1,6 +1,15 @@
 var infos = [
   {
     date: "2026-08-23",
+    title: "v1.0.0 をリリースしました",
+    body: "・タグに色を付けるように変更<br>・アプリの二重起動を防止",
+    link: {
+      url: "https://github.com/takuyash/SimpleFolderLauncher/releases",
+      label: "GitHub Releases を見る"
+    }
+  },
+  {
+    date: "2026-08-23",
     title: "v0.9.0 をリリースしました",
     body: "・アイコン画像の変更",
     link: {
