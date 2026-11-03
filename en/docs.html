@@ -91,6 +91,19 @@ code {
   font-size: 90%;
 }
 
+pre {
+  background: #edf2f7;
+  padding: 16px;
+  border-radius: 12px;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+
+pre code {
+  padding: 0;
+  background: none;
+}
+
 img {
   max-width: 100%;
   border-radius: 12px;
@@ -215,11 +228,30 @@ PhraseLauncher is a simple launcher that allows you to paste fixed phrases quick
   </ul>
 </div>
 
+<h2>Fill-in Blanks</h2>
+<div class="step">
+  <p>
+    Write <code>{name}</code> in a phrase to make a blank that you fill in just before pasting.
+  </p>
+  <pre><code>Dear {Recipient},
+
+Thank you for your request. We will handle it by {Deadline}.</code></pre>
+  <p>
+    When you select this phrase, a small input window appears with one field per blank. Type the values and press <code>Enter</code> to paste the completed text.
+  </p>
+  <ul>
+    <li>Move between fields with <code>Tab</code>; press <code>Esc</code> to cancel without pasting.</li>
+    <li>If the same name appears more than once, you only enter it once and it is used everywhere.</li>
+    <li>A blank name cannot contain braces or line breaks (max 40 characters).</li>
+  </ul>
+</div>
+
 <h2>Main Features</h2>
 <ul>
   <li>High-speed phrase input.</li>
   <li>Group management and reordering.</li>
   <li>Automatically open the tab matching the app in use.</li>
+  <li>Fill-in blanks with <code>{name}</code>.</li>
   <li>Input line breaks using <code>Shift + Enter</code>.</li>
   <li>Lightweight and fast performance.</li>
 </ul>
